@@ -318,7 +318,7 @@ img {
 @media (max-width: 450px) {
   .img-thumb {
     margin: 0 auto 10rem;
-    }
+}
 }
 
 .thumb-blue {
@@ -579,16 +579,35 @@ img {
     }
 }
 
-@media (max-width: 1000px) {
-  .image-feed, .image-feed-2, .image-feed-text, .image-feed-replace {
+@media (min-width: 1200px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .image-feed-replace {
+        display: none;
+    }
+}
+
+
+@media (max-width: 1200px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .image-feed-replace {
+        display: block;
+    }
+}
+
+
+
+/*html[data-useragent*='MSIE 10.0'] .intro {
+    color: red;
+    }*/
+
+    @media (max-width: 1000px) {
+      .image-feed, .image-feed-2, .image-feed-text, .image-feed-replace {
         margin-bottom: 5rem;
     }
 }
 
 @media (max-width: 500px) {
   .image-feed, .image-feed-2, .image-feed-text, .image-feed-replace {
-        margin-bottom: 2rem;
-    }
+    margin-bottom: 2rem;
+}
 }
 
 /* video */
@@ -772,7 +791,7 @@ img {
 @media (max-width: 1360px) {
     .ma-text-1 {
       font-size: 1.75rem;
-    }
+  }
 }
 
 
@@ -1008,13 +1027,13 @@ a.service-link:hover {
 @media (min-width: 940px) {
     .project-top {
       margin-top: 0;
-    }
+  }
 }
 
 @media (max-width: 940px) {
     .project-top {
       margin-top: 4rem;
-    }
+  }
 }
 
 .info-text {
@@ -1092,9 +1111,4 @@ p.details {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-}
-
-
-img {
-       -ms-interpolation-mode: bicubic;
 }

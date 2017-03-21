@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="work">
+<html class="work" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
 
 <head>
     <meta charset="utf-8">
@@ -11,21 +11,28 @@
     <link rel="stylesheet" href="_sv_feed.css">
     <link rel="stylesheet" href="_sv_custom.css">
     <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-70672511-1', 'auto');
-        ga('send', 'pageview');
-    </script>
+    ga('create', 'UA-70672511-1', 'auto');
+    ga('send', 'pageview');
+
+    var b = document.documentElement;
+    b.setAttribute('data-useragent',  navigator.userAgent);
+    b.setAttribute('data-platform', navigator.platform );
+
+// IE 10 == Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)
+
+</script>
 </head>
 
 <body>
@@ -73,16 +80,16 @@
         <div class="image-feed">
             <a href="work/marketing-automation.html">
                 <div class="img-stamp">
-                    <img class="stamp-1 rotate-m-8" src="bits/stamps/stamp-01.svg">
+                    <img class="hero stamp-1 rotate-m-8" src="bits/stamps/stamp-01.svg">
                 </div>
-                <img src="bits/images/MA-hero.png" alt="Marketing Automation for Databarracks">
+                <img class="hero" src="bits/images/MA-hero.png" alt="Marketing Automation for Databarracks">
             </a>
         </div>
 
         <!-- bcp  -->
         <!-- big boy screens -->
         <div class="image-feed-text">
-            <img class="stamp-2 rotate-m-3" src="bits/stamps/stamp-03.svg">
+            <img class="hero stamp-2 rotate-m-3" src="bits/stamps/stamp-03.svg">
             <div class="small fixed-height work-margin">
                 <a href="work/bcp.html" alt="Business Continuity Podcast" class="img-bcp">Business Continuity Podcast</a>
             </div>
@@ -92,11 +99,11 @@
             </div>
         </div>
 
-        <!-- bcp smaller screens -->
+
         <div class="image-feed-replace">
             <a href="work/bcp.html">
                 <div class="img-stamp">
-                    <img class="stamp-6 rotate-m-3" src="bits/stamps/stamp-03.svg" />
+                    <img class="hero stamp-6 rotate-m-3" src="bits/stamps/stamp-03.svg" />
                 </div>
                 <img src="bits/images/bcp-hero.gif" alt="Business Continuity Podcast">
             </a>
@@ -106,103 +113,104 @@
         <div class="image-feed">
             <a href="work/stitched.html">
                 <div class="img-stamp">
-                    <img class="stamp-3 rotate-9" src="bits/stamps/stamp-05.svg" />
+                    <img class="hero stamp-3 rotate-9" src="bits/stamps/stamp-05.svg" />
                 </div>
                 <div class="video-holder">
-                    <video loop muted autoplay poster="bits/images/stitched-hero.png" class="video-holder__video">
+                    <video loop muted autoplay poster="bits/images/stitched-hero.png" class="hero video-holder__video">
                         <source src="bits/video/stitched-loop.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </a>
-        </div>
-
-        <!-- fortress & cif -->
-        <!-- big boy screens -->
-
-        <div class="image-feed-2">
-            <img class="stamp-4 rotate-m-10" src="bits/stamps/stamp-02.svg">
-            <div class="small">
-                <a href="work/fortress.html" alt="Fortress Availability Services" class="img-fortress">Fortress</a>
-            </div>
-            <img class="stamp-5 rotate-2" src="bits/stamps/stamp-06.svg">
-            <div class="small">
-                <a href="work/cif.html" alt="Cloud Industry Forum" class="img-cif">Cloud Industry Forum</a>
-            </div>
-        </div>
-
-        <!-- fortress  -->
-        <!-- smaller screens -->
-        <div class="image-feed-replace">
-            <a href="work/fortress.html">
-                <div class="img-stamp">
-                    <img class="stamp-8 rotate-2" src="bits/stamps/stamp-02.svg" />
-                </div>
-                <img src="bits/images/fortress-hero.png" alt="Fortress Availability Services">
-            </a>
-        </div>
-
-        <!-- cif  -->
-        <!-- smaller screens -->
-        <div class="image-feed-replace">
-            <a href="work/cif.html">
-                <div class="img-stamp">
-                    <img class="stamp-3 rotate-m-3" src="bits/stamps/stamp-06.svg" />
-                </div>
-                <img src="bits/images/cif-hero.png" alt="Cloud Industry Forum">
-            </a>
-        </div>
-
-        <!-- dhc 2016 -->
-        <div class="image-feed">
-            <a href="work/dhc.html">
-                <div class="img-stamp">
-                    <img class="stamp-6 rotate-m-3" src="bits/stamps/stamp-07.svg" />
-                </div>
-                <img src="bits/images/dhc-hero.png" alt="Data Health Check 2016">
-            </a>
-        </div>
-
-        <!-- computer thinking video -->
-        <!-- big boy screens -->
-        <div class="image-feed-text flex-right">
-            <div>
-                <img class="stamp-7 rotate-m-3" src="bits/stamps/stamp-09.svg" />
-            </div>
-            <div class="small fixed-height work-margin">
-                <div class="arrow-br work-arrow-bl"></div>
-                <p class="work-text align-right"><a href="https://www.youtube.com/watch?v=J9LK6EtxzgM" target="_blank" alt="Changes to Computer Thinking">Stephen Fry charts mankind’s ongoing relationship with technology throughout history</a></p>
-            </div>
-            <div class="work-2 small-video-holder">
-                <a href="https://www.youtube.com/watch?v=J9LK6EtxzgM" target="_blank" alt="Changes to Computer Thinking">
-                    <video loop muted autoplay poster="bits/images/ctct-hero.jpg" class="small-video-holder__video">
-                        <source src="bits/video/ctct-loop.mp4" type="video/mp4">
-                    </video>
+                        </video>
+                    </div>
                 </a>
             </div>
-        </div>
 
-        <!-- smaller screens -->
-        <div class="image-feed-replace">
-            <a href="https://www.youtube.com/watch?v=J9LK6EtxzgM" target="_blank">
-                <div class="img-stamp">
-                    <img class="stamp-1 rotate-2" src="bits/stamps/stamp-09.svg">
+            <!-- fortress & cif -->
+            <!-- big boy screens -->
+
+            <div class="image-feed-2">
+                <img class="hero stamp-4 rotate-m-10" src="bits/stamps/stamp-02.svg">
+                <div class="small">
+                    <a href="work/fortress.html" alt="Fortress Availability Services" class="img-fortress">Fortress</a>
                 </div>
-                <div class="video-holder">
-                    <video loop muted autoplay poster="bits/images/ctct-hero.jpg" class="video-holder__video">
-                        <source src="bits/video/ctct-wide-loop.mp4" type="video/mp4">
-                    </video>
+                <img class="hero stamp-5 rotate-2" src="bits/stamps/stamp-06.svg">
+                <div class="small">
+                    <a href="work/cif.html" alt="Cloud Industry Forum" class="img-cif">Cloud Industry Forum</a>
                 </div>
-            </a>
-        </div>
-    </section>
+            </div>
 
-    <footer>
-        <div class="img-thumb thumb-blue"></div>
-        <div class="padding"></div>
-    </footer>
+            <!-- fortress  -->
+            <!-- smaller screens -->
+            <div class="image-feed-replace">
+                <a href="work/fortress.html">
+                    <div class="img-stamp">
+                        <img class="hero stamp-8 rotate-2" src="bits/stamps/stamp-02.svg" />
+                    </div>
+                    <img src="bits/images/fortress-hero.png" alt="Fortress Availability Services">
+                </a>
+            </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="_sv_custom.js"></script>
-</body>
+            <!-- cif  -->
+            <!-- smaller screens -->
+            <div class="image-feed-replace">
+                <a href="work/cif.html">
+                    <div class="img-stamp">
+                        <img class="hero stamp-3 rotate-m-3" src="bits/stamps/stamp-06.svg" />
+                    </div>
+                    <img src="bits/images/cif-hero.png" alt="Cloud Industry Forum">
+                </a>
+            </div>
 
-</html>
+            <!-- dhc 2016 -->
+            <div class="image-feed">
+                <a href="work/dhc.html">
+                    <div class="img-stamp">
+                        <img class="hero stamp-6 rotate-m-3" src="bits/stamps/stamp-07.svg" />
+                    </div>
+                    <img class="hero" src="bits/images/dhc-hero.png" alt="Data Health Check 2016">
+                </a>
+            </div>
+
+            <!-- computer thinking video -->
+            <!-- big boy screens -->
+            <div class="image-feed-text flex-right">
+                <div>
+                    <img class="hero stamp-7 rotate-m-3" src="bits/stamps/stamp-09.svg" />
+                </div>
+                <div class="small fixed-height work-margin">
+                    <div class="arrow-br work-arrow-bl"></div>
+                    <p class="work-text align-right"><a href="https://www.youtube.com/watch?v=J9LK6EtxzgM" target="_blank" alt="Changes to Computer Thinking">Stephen Fry charts mankind’s ongoing relationship with technology throughout history</a></p>
+                </div>
+                <div class="work-2 small-video-holder">
+                    <a href="https://www.youtube.com/watch?v=J9LK6EtxzgM" target="_blank" alt="Changes to Computer Thinking">
+                        <video loop muted autoplay poster="bits/images/ctct-hero.jpg" class="small-video-holder__video">
+                            <source src="bits/video/ctct-loop.mp4" type="video/mp4">
+                            </video>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- smaller screens -->
+                <div class="image-feed-replace">
+                    <a href="https://www.youtube.com/watch?v=J9LK6EtxzgM" target="_blank">
+                        <div class="img-stamp">
+                            <img class="hero stamp-1 rotate-2" src="bits/stamps/stamp-09.svg">
+                        </div>
+                        <div class="video-holder">
+                            <video loop muted autoplay poster="bits/images/ctct-hero.jpg" class="video-holder__video">
+                                <source src="bits/video/ctct-wide-loop.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+
+                <footer>
+                    <div class="img-thumb thumb-blue"></div>
+                    <div class="padding"></div>
+                </footer>
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+                <script src="_sv_custom.js"></script>
+
+            </body>
+
+            </html>
